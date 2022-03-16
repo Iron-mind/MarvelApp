@@ -1,0 +1,6 @@
+.container{
+  min-height: 20px;
+  width: auto;
+  flex-direction: row;
+  font-weight: 100;
+}
