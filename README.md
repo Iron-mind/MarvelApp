@@ -2,7 +2,7 @@
 
 ### Know comics related to any character of Marvel. Go ahead. Look and enjoy
 
-Video. Click here [![Watch the video](./imgs/video.jpg)](https://www.youtube.com/watch?v=lXkDSZuQnlg)
+Video. Click here [![Watch the video](./imgs/video.jpg)](https://youtu.be/C8HZUGwKVuU)
 https://youtu.be/C8HZUGwKVuU
 
 ## Home
