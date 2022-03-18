@@ -5,7 +5,7 @@ const styles = StyleSheet.create({
    container:{
      backgroundColor: '#46237A',
      borderColor:"black",
-     border: "2px solid",
+     borderWidth: 2,
      height:360,
      width:240,
      alignItems: 'center',
@@ -13,7 +13,7 @@ const styles = StyleSheet.create({
      borderRadius:2,
      margin:3,
      padding:3,
-     direction: 'column'
+     writingDirection: 'auto'
    },
   image:{
     width:'100%',
@@ -26,7 +26,7 @@ const styles = StyleSheet.create({
 });
 
 export default function Comic({ name, image }) {
-  
+
   return (
     <View style={styles.container}>
 			<Image

@@ -5,11 +5,11 @@ const styles = StyleSheet.create({
     flex: 1,
     backgroundColor: '#FCFCFC',
     borderColor:"black",
-    border: "2px solid",
+    borderWidth: 2,
     width:'100%',
     height:"100%",
     alignItems: 'center',
-    fontWeight:100,
+    fontWeight:"100",
         // justifyContent: 'center',
     padding:3,
     flexDirection: 'column'
@@ -17,7 +17,6 @@ const styles = StyleSheet.create({
   image:{
     width:"100%",
     height:190,
-
     margin:4
   },
   title:{
@@ -31,20 +30,13 @@ const styles = StyleSheet.create({
 
 
 
- // export default function Information() {
- //   return (
- //   <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
- //     <Text>Normal component</Text>
- //   </View>
- //  );
- // }
 export default function Information({ image, name, description }) {
-  
+
  return (
    <View style={styles.container}>
    <Image
       style={styles.image}
-      source={image}
+      source={{uri:image}}
     />
      <Text style={styles.title}>{name}</Text>
      <Text style={styles.description}>{description}</Text>

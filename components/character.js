@@ -3,9 +3,11 @@ import { Text, View,  Image ,StyleSheet, TouchableOpacity} from 'react-native';
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#256EFF',
-    borderColor:"black",
-    border: "2px solid",
+
+    backgroundColor: '#46237A',
+
+    borderWidth: 3,
+    borderColor:"white",
     width:'100%',
     maxHeight:80,
     alignItems: 'center',
@@ -26,9 +28,9 @@ export default function CharacterCard({image,id, name,navigation}) {
     <TouchableOpacity style={styles.container} onPress={()=>{ navigation.navigate("Detail",{name,image,id})}}>
 			<Image
         style={styles.previewImage}
-				source={image}
+				source={{uri:image}}
 			/>
-      <Text name={name}>{name}</Text>
+      <Text style={{color: 'white'}}name={name}>{name}</Text>
     </TouchableOpacity>
   );
 }
